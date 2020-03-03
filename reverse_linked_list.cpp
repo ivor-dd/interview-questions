@@ -14,11 +14,11 @@ public:
     {}
 };
 
-ListNode* reverseList(ListNode* head)
+ListNode * reverseList(ListNode * head)
 {
-    ListNode* newHead = head;
-    ListNode* _prev;
-    ListNode* _next;
+    ListNode * newHead = head;
+    ListNode * _prev;
+    ListNode * _next;
 
     while (newHead!=NULL) {
         _prev = newHead->prev;
@@ -34,10 +34,10 @@ ListNode* reverseList(ListNode* head)
 }
 
 // Example function that calls reverseList.
-ListNode* doSomeWork()
+ListNode * doSomeWork()
 {
     ListNode* listHead = new ListNode[5];
-    for( int i=0; i<5; i++ )
+    for(int i=0; i<5; i++)
     {
         listHead[i].data = i;
         listHead[i].next = ( i < 4 ) ? listHead + i + 1 : NULL;
@@ -50,7 +50,7 @@ ListNode* doSomeWork()
 
 int main()
 {
-    ListNode* listHead = doSomeWork();
+    ListNode * listHead = doSomeWork();
     
     while (listHead!=NULL) {
         std::cout << listHead->data << " ";
