@@ -14,7 +14,7 @@ public:
     {}
 };
 
-ListNode* reverseList( ListNode* head )
+ListNode* reverseList(ListNode* head)
 {
     ListNode* newHead = head;
     ListNode* _prev;
@@ -44,7 +44,7 @@ ListNode* doSomeWork()
         listHead[i].prev = ( i > 0 ) ? listHead + i - 1 : NULL;
     }
 
-    listHead = reverseList( listHead );
+    listHead = reverseList(listHead);
     return listHead;
 }
 
